@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me at the zoo</title>
+    <style>
+
+        .grid{
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 1rem;
+            width: 40rem;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        footer{
+            border-top: 4px solid rgb(161, 64, 31);
+            padding-top: 2rem;
+            margin-top: 2rem;
+            width: 37.5rem;
+            text-align: right;
+        }
+        div.grid>div{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+
+        }
+        button{
+            width: 2.5rem;
+            height: 2.5rem;
+            line-height: 4;
+            overflow: hidden;
+
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #bdf;
+            box-shadow: 0 0 0 0.125rem #000000bb, inset 0 0 0.25rem 0 #ffffffbb;
+        }
+        button:hover {
+            background-color: #9cf;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+<body>
+    <header>
+        <h1>Video lejátszása_BSN53V</h1>
+    </header>
+    <section>
+        <video src="BSN53V_video1.mp4" autoplay="true" controls width="600"></video>
+        <div class="grid">
+            <div>
+                <button id="start">
+                    <span class="material-symbols-outlined">play arrow</span>
+                </button>
+                <button id="stop">Leállítás</button>
+            </div>
+            <div>
+                <button id="startstop">Indítás/Leállítás</button>
+            </div>
+            <div>
+                <button id="mute">Némítás</button>
+                <button id="quiet">Halkítás</button>
+                <button id="loud">Hangosítás</button>
+            </div>
+            <div>
+                <button id="veryslow">Nagyon lassítás</button>
+                <button id="slow">Lassítás</button>
+                <button id="normal">Normális</button>
+                <button id="fast">Gyorsítás</button>
+                <button id="veryfast">Nagyon gyorsítás</button>
+            </div>
+            <div>
+                <button id="small">Kicsinyítés</button>
+                <button id="normalsize">Normál</button>
+                <button id="big">Nagyobbítás</button>
+            </div>
+            <div>
+                <button id="hasitended">Befejeződött-e?</button>
+                <button id="length">Videó hossza (mp)</button>
+                <button id="currently">Jelenlegi pozíció</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Forrás: <a href="https://www.w3schools.com/html/html5_video.asp">https://www.w3schools.com/html/html5_video.asp</a>
+    </footer>
+
+    <script>
+        let btnClick = (id, onclick) => document.getElementById(id).addEventListener ("click", onclick)
+        //A getElementById("video") megkeresi azt az HTML elemet, amelynek az id attribúta "video"
+
+        const video = document.querySelector("video");
+
+        btnClick("start",    () => video.play());
+        btnClick("stop",    () => video.pause());
+        btnClick("startstop",    () => video.paused ? video.play() : video.pause);
+
+        btnClick("mute",    () => video.volume = 0);
+        btnClick("quiet",    () => video.volume = 0.5);
+        btnClick("loud",    () => video.volume = 1);
+
+        btnClick("veryslow",    () => video.playbackRate = 0.5);
+        btnClick("slow",    () => video.playbackRate = 0.75);
+        btnClick("normal",    () => video.playbackRate = 1);
+        btnClick("fast",    () => video.playbackRate = 1.25);
+        btnClick("veryfast",    () => video.playbackRate = 1.5);
+
+        btnClick("small",    () => video.width =400);
+        btnClick("normalsize",    () => video.width = 600);
+        btnClick("big",    () => video.width = 800);
+
+        btnClick("hasitended",    () => alert(video.ended));
+        btnClick("length",    () => alert(video.duration));
+        btnClick("currently",    () => alert(video.currentTime));
+    </script>
+</body>
+</html>
