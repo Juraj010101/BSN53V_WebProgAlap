@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            display: block;
+            width: fit-content;
+            border-bottom: 4px solid gray;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Audio zene, hang lejátszása_BSN53V</h1>
+    </header>
+
+    <main>
+        <audio id="audio" src="BSN53V_audio.mp3" controls></audio>
+        <audio id="yes" src="jazzy.mp3"></audio>
+        <audio id="no" src="no.mp3"></audio>
+
+        <script>
+            const audio = document.getElementById('audio');
+            const yes = document.getElementById('yes');
+            const no = document.getElementById('no');
+        </script>
+        
+        <div class="buttons">
+            <p>
+                <button id="startstop">lejátszás / szünet</button>
+                &nbsp;&nbsp;&nbsp;
+                <button id="yes" onclick="yes.play()">pozitív</button>
+                <button id="no" onclick="no.play()">negatív</button>
+            </p>
+            <p>
+                <button onclick="audio.volume = 0">néma</button>
+                <button onclick="audio.volume = 0.5">halk</button>
+                <button onclick="audio.volume = 1">hangos</button>
+                &nbsp;&nbsp;&nbsp;
+                <button onclick="audio.playbackRate = 0.25">nagyon lassú</button>
+                <button onclick="audio.playbackRate = 0.5"> lassú</button>
+                <button onclick="audio.playbackRate = 1">normál</button>
+                <button onclick="audio.playbackRate = 2">gyors</button>
+                <button onclick="audio.playbackRate = 4">nagyon gyors</button>
+            </p>
+            <p>
+                <button onclick="alert(audio.ended)">befejeződött-e</button>
+                <button onclick="alert(audio.duration)">audió hossza (mp)</button>
+                <button onclick="alert(audio.currentTime)">jelenlegi pozició</button>
+                <button onclick="audio.currentTime = 90">ugrás másfél percre</button>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Forrás: </h3>
+        <p><a href="https://w3schools.com/html/html5_audio.asp">https://w3schools.com/html/html5_audio.asp</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('startstop').addEventListener('click', () => {
+            if (audio.paused){
+                audio.play();
+            } else{
+                audio.paused();
+            }
+        });
+        audio.addEventListener('ended', () => {
+            alert('VÉGE');
+        });
+    </script>
+</body>
+</html>
