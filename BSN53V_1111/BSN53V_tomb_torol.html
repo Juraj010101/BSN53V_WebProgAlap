@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tömb hozzáadása</title>
+</head>
+<body>
+    <h3>Tömb elemeinek hozzáadása, kiírása</h3>
+    <strong>Előtte:</strong> <p id="BSN53V"></p>
+    <strong >Utána:</strong> <p id="BSN53V"></p>
+
+    <button onclick="torol0()">Tömb 0. indexű elemek törlése</button>
+    <button onclick="torol1()">Tömb 1. indexű elemek törlése</button>
+    <button onclick="torol2()">Tömb 2. indexű elemek törlése</button>
+
+    <script>
+        let prognyelvek = ["HTML5", "CSS3", "JS"]
+        document.getElementById("BSN53V").innerHTML = prognyelvek;
+ 
+
+        function torol0(){
+            delete prognyelvek [0]
+            document.getElementById("BSN53V").innerHTML = prognyelvek;
+        }
+        function torol1(){
+            delete prognyelvek [1]
+  
+            document.getElementById("BSN53V").innerHTML = prognyelvek;
+        }
+                function torol2(){
+            delete prognyelvek [2]
+            document.getElementById("BSN53V").innerHTML = prognyelvek;
+        }
+
+
+    </script>
+</body>
+</html>
