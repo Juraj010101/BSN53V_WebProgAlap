@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For ciklus </title>
+</head>
+<body>
+    <h2>For ciklus</h2>
+    <p id="BSN53V"></p>
+
+    <script>
+        let tomb = new Array("HTML5", "CSS3", "JSON");
+
+        tomb[10] ="jQuery";
+        tomb[4] = "SQL";
+        tomb["X"] = "AJAX";
+        tomb[5] = "JavaScript";
+    let elemek ="";
+
+        for(let i in tomb)
+    {
+        elemek += i + ": " +tomb[i] + "<br />"
+    }
+document.write(elemek)
+    </script>
+</body>
+</html>

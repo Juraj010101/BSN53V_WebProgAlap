@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JSON fájl beolvasás - JavaScript-ben</h3>
+
+    <strong>JSON:</strong>
+    <div class="jsonString" style="font-family:monospace;"></div>
+
+<script>
+    const jsonOBjLJ={
+        Egyetem: "Tokaj Hegyalja Egyetem",
+        Város: "Sárospatak",
+        Irányítószám: "3950",
+        Név:"Hallgató neve"
+    }
+
+    const jsonString =JSON.stringify(jsonOBjLJ, null, 4);
+
+     const jsonStringDiv = document.querySelector('.jsonString');
+     jsonStringDiv.innerHTML =jsonString;   
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JSON fájl beolvasás - JavaScript-ben</h3>
+
+    <strong>JSON:</strong>
+    <p id="BSN53V"></p>
+
+    <button onclick="olvasas()">JSON beolvasás</button>
+
+<script>
+    function olvasas(){
+        const JSONdata = '[{"nev":"HTML5","kiterjesztes":".html"}, {"nev":"CSS3","kiterjesztes":".css"}, {"nev":"JavaScript","kiterjesztes":".js"}]';
+
+        const obj = JSON.parse(JSONdata);
+
+        let i = 0;
+        let szovegKiir = "";
+
+        while (i < obj.length){
+            szovegKiir += "Név: " + obj[i].nev + ", kiterjesztés: " + obj[i].kiterjesztes + "<br>";
+            i++;
+        }
+
+        document.getElementById("BSN53V").innerHTML = szovegKiir;
+    }
+</script>
+
+</body>
+</html>
