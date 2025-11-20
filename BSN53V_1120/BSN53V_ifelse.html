@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If elágazás – Pozitív és negatív számok</title>
+    <script>
+        let szamok = [-241, 41, 421, 0, 31, -31, 7, -3, 7];
+
+        let pozitivSzamok = [];
+        let negativSzamok = [];
+
+        function vizsgalat() {
+            pozitivSzamok = [];
+            negativSzamok = [];
+
+            for (let i = 0; i < szamok.length; i++) {
+
+                if (szamok[i] > 0) {
+                    pozitivSzamok.push(szamok[i]);
+                }
+                else {
+                    negativSzamok.push(szamok[i]);
+                }
+            }
+
+            document.getElementById("pozitiv").innerHTML = pozitivSzamok.join(", ");
+            document.getElementById("negativ").innerHTML = negativSzamok.join(", ");
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Pozitív és negatív számok vizsgálata</h2>
+
+    Pozitív számok: <p id="pozitiv"></p>
+    Negatív vagy nem pozitív számok: <p id="negativ"></p>
+
+    <button onclick="vizsgalat()">Vizsgálat</button>
+
+</body>
+
+</html>
