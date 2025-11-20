@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("btn").click(function () {
+                $("ul li:first").hide();
+                $("ul li:first-child").hide();
+                $("[href]").hide();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <h2 class="fejlec">jQuery feladatok</h2>
+
+    <p>A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.</p>
+    <p><strong>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</strong></p>
+
+      
+    <ul>
+            <li>tíz</li>
+            <li>húsz</li>
+            <li>harminc</li>
+    </ul>
+    <ul>
+        <li>tizedik</li>
+        <li>huszadik</li>
+        <li>harmincadik</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>11111aaaaa</td>
+            <td>bbbbb</td>
+        </tr>
+        <tr>
+            <td>22222aaaaa</td>
+            <td>bbbbb</td>
+        </tr>
+                <tr>
+                    <td>33333aaaaa</td>
+                    <td>bbbbb</td>
+                </tr>
+                        <tr>
+                            <td>44444aaaaa</td>
+                            <td>bbbbb</td>
+                        </tr>
+                                <tr>
+                                    <td>55555aaaaa</td>
+                                    <td>bbbbb</td>
+                                </tr>
+                                        <tr>
+                                            <td>66666aaaaa</td>
+                                            <td>bbbbb</td>
+                                        </tr>
+    </table>
+ 
+
+        <btn onClick="$('a').hide()"><strong>Kattints ide_1!</strong></btn>
+
+        &nbsp;&nbsp;&nbsp;
+        <btn onClick="$(this).hide()"><strong>Kattints ide_2!</strong></btn>
+        
+        &nbsp;&nbsp;&nbsp;
+        <btn onClick="$('.fejlec').hide()"><strong>Kattints ide_3!</strong></btn>
+        
+        &nbsp;&nbsp;&nbsp;
+        <btn onClick="$('#linkszoveg').hide()"><strong>Kattints ide_4!</strong></btn>
+        
+        &nbsp;&nbsp;&nbsp;
+        <btn onClick="$('tr:odd').hide()"><strong>Kattints ide_5!</strong></btn>
+        
+        &nbsp;&nbsp;&nbsp;
+
+<br><br><br>
+
+<span id="linkszoveg">jQuery:</span>
+
+    <a href="https://www.tutorialspoint.com/index.htm">jQuery</a>
+</body>
+
+</html>
