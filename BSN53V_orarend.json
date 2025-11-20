@@ -1,0 +1,19 @@
+{
+    "BSN53V_orarend":{
+        "ora":[
+            {
+                "targy":"",
+                "idopont":{
+                    "nap":"",
+                    "tol":"",
+                    "ig":""
+                },
+                "helyszin": "Inf. 103",
+                "oktato": "dr. hornyak oliver",
+                "szak": "G3BIW"
+                
+            }
+            
+        ]
+    }
+}
