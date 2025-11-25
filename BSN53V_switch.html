@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+
+<script>
+    let nap="";
+    let msg="";
+
+    function hetfo(){
+        nap="Hétfő";
+        melyikNap();
+    }
+    
+    function hetfo(){
+        nap="Kedd";
+        melyikNap();
+    }
+    
+    function hetfo(){
+        nap="Szerda";
+        melyikNap();
+    }
+    
+    function hetfo(){
+        nap="Csütörtök";
+        melyikNap();
+    }
+    
+    function hetfo(){
+        nap="Péntek";
+        melyikNap();
+    }
+    
+    function hetfo(){
+        nap="Szombat";
+        melyikNap();
+    }
+    
+    function hetfo(){
+        nap="Vasárnap";
+        melyikNap();
+    }
+
+    function melyikNap()
+    {
+        switch(nap){
+            case "Hétfő":
+                msg = "A hét első napja." ;
+                break;
+
+        }
+                switch(nap){
+            case "Kedd":
+                msg = "A hét második." ;
+                break;
+
+        }
+                switch(nap){
+            case "Szerda":
+                msg = "A hét közepe." ;
+                break;
+
+        }
+                switch(nap){
+            case "Csütörtök":
+                msg = "Szerda utáni nap." ;
+                break;
+
+        }
+                switch(nap){
+            case "Péntek":
+                msg = "A hét utolsó munkanapja." ;
+                break;
+
+        }
+                switch(nap){
+            case "Szombat":
+                msg = "Hétvége." ;
+                break;
+
+        }
+                switch(nap){
+            case "Vasárnap":
+                msg = "Nem létezik ilyen nap." ;
+                break;
+                default:
+                    msg ="Nem létezik ilyen nap";
+
+        }
+        document.getElementById("valasz").innerHTML = msg;
+    }
+</script>
+
+
+</head>
+<body>
+    <h2>Switch</h2>
+    <strong>Milyen nap van ma?</strong>
+    <p id="valasz"></p>
+
+    <br>
+
+    <button onclick="hetfo()">Hétfő</button>
+    <button onclick="kedd()">Kedd</button>
+    <button onclick="szerda()">Szerda</button>
+    <button onclick="csutortok()">Csütörtök</button>
+    <button onclick="pentek()">Péntek</button>
+    <button onclick="szombat()">Szombat</button>
+    <button onclick="vasarnap()">Vasárnap</button>
+</body>
+</html>

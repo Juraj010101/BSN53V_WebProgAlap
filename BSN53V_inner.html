@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>innerHTML</h3>
+    <p id="BSN53V1">Ennek olvassa ki a tartalmát.</p>
+    <p id="BSN53V2">Ennek írja át a tartalmát.</p>
+
+    <button onclick="kiolvas()">Kiolvas</button>
+    <button onclick="atir()">Átír</button>
+
+    <script>
+
+        function kiolvas(){
+            alert(document.getElementById("BSN53V1").innerHTML);
+        }
+                function kiolvas(){
+            document.getElementById("BSN53V2").innerHTML ="Átírja a tartalmat.";
+        }
+
+
+    </script>
+</body>
+</html>
