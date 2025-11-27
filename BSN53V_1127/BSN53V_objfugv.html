@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objektum létrehozása JS belül</title>
+</head>
+<body>
+    <h3>Objektum létrehozása</h3>
+    <p id="BSN53V"></p>
+
+    <button onclick="kiir()">Adatok kiírása</button>
+
+    <script>
+          const hallgato = {
+            nev: "XY",
+            eletkor: 19,
+            egyetem: "THE",
+            szak: "PTI",
+          
+
+           osszesAdat: function(){
+            return  "Név:" + hallgato.nev + ",<br> Életkor:" + hallgato["eletkor"] +
+            ",<br> Egyetem:" + hallgato["egyetem"] + ",<br> Szak:"  +hallgato.szak;
+           }
+          }
+
+          function kiir(){
+            document.getElementById("BSN53V").innerHTML = hallgato.osszesAdat(); 
+          }
+
+
+    </script>
+</body>
+</html>

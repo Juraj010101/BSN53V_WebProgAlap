@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+             $(this).hide();
+   });
+
+   $("#p2").dbclick(function(){
+    $(this).hide();
+   });
+
+   $("#gomb").mouseenter(function(){
+    alert('A gomb fölé húztad az egeret.');
+   });
+
+   $("h2").mouseleave(function(){
+    alert('Elhúztad az egeret a fejlécről.');
+   })
+   $("form").mousedown(function(){
+    $(this).css("border", "10px");
+   });
+      $("form").mouseup(function(){
+    $(this).css("border", "10px");
+   });
+   $("#nev,#nemail,#jelszo,p").hover(function(){
+    //$(this).css("backgroundcolor","#91e3ff);
+
+   },
+   function(){
+    //$(this).css("background-color","#ffffff")
+   }
+    );
+    $("#nev,#email,#jelszo").focus(function(){
+        $(this).css("background-color","#ff99ff");
+    });
+        $("#nev,#email,#jelszo").focus(function(){
+        $(this).css("background-color","#ffffff");
+    });
+
+    </script>
+</head>
+<body>
+    <h2>jQuery feladatok</h2>
+
+    <p id="p1">A jQuery egy Javascript programozói könyvtár, amelyet John Resign
+        kezdett fejleszteni. <strong>Kattins ide</strong>, és eltűnik!</p>
+        <p id="p2">Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja </p>
+        <strong>Kattins ide duplán</strong>, és eltűnik!
+    </p>
+
+    <br>
+
+     <form styel="padding:10px; width:500px"></form>
+     <b>Név:</b> <input id="nev" name="nev"><br><br>
+     <b>E-amil:</b> <input id="email" name="gmail"><br><br>
+     <b>Jelszó:</b> <input id="jelszo" name="jelszo"><br><br>
+</body>
+</html>

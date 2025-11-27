@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objektum létrehozása</title>
+</head>
+<body>
+    <h3>Objektum létrehozása</h3>
+    <p id="BSN53V"></p>
+
+    <button onclick="kiir()">Adatok kiírása</button>
+
+    <script>
+          const hallgato = {
+            nev: "XY",
+            eletkor: 19,
+            egyetem: "THE",
+            szak: "PTI"
+          };
+
+          function kiir(){
+            document.getElementById("BSN53V").innerHTML = "<b>Név:</b>"
+            + hallgato.nev + ",<br> <b>Életkor:</b>" + hallgato.eletkor +
+            ",<br> <b>Egyetem:</b>" + hallgato.egyetem + ",<br> Szak:</b>" 
+            +hallgato.szak;
+          }
+
+
+    </script>
+</body>
+</html>
