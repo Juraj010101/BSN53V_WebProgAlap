@@ -1,0 +1,80 @@
+{
+    "BSN53V_orarend":{
+        "ora":[
+            {
+                "targy":"Nemzetközi kitekintés, nemzetközi drónmegoldások",
+                "idopont":{
+                    "nap":"hétfő",
+                    "tol":"17:00",
+                    "ig":"18:20"
+                },
+                "helyszin": "online",
+                "oktato": "dr. Matus László ",
+                "szak": "alapképzés (BA/BSc/BProf)"
+                
+            },
+                  {
+                "targy":"Diszkrét matematika és lineáris algebra",
+                "idopont":{
+                    "nap":"kedd",
+                    "tol":"11:00",
+                    "ig":"12:25"
+                },
+                "helyszin": "tanterem 117",
+                "oktato": "Dr. Földvári Attila József",
+                "szak": "alapképzés (BA/BSc/BProf)"
+                
+            },
+                {
+                "targy":"HSUP:Innováció és startup világ",
+                "idopont":{
+                    "nap":"szerda",
+                    "tol":"16:30",
+                    "ig":"19:10"
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Németh-Leskó Anett Katalin",
+                "szak": "alapképzés (BA/BSc/BProf)"
+                
+            },
+            {
+                "targy":"Számítógép architektúrák",
+                "idopont":{
+                    "nap":"szerda",
+                    "tol":"10:00",
+                    "ig":"11:15"
+                },
+                "helyszin": "Informatikaterem 124-es",
+                "oktato": "Dr. Bednarik László",
+                "szak": "alapképzés (BA/BSc/BProf)"
+                
+            },
+                        {
+                "targy":"Az informatika logikai alapjai",
+                "idopont":{
+                    "nap":"szerda",
+                    "tol":"16:00",
+                    "ig":"19:10"
+                },
+                "helyszin": "online",
+                "oktato": "Dr. Godó Zoltán Attila",
+                "szak": "alapképzés (BA/BSc/BProf)"
+                
+            },
+                                    {
+                "targy":"Bevezetés az informatikába",
+                "idopont":{
+                    "nap":"szerda",
+                    "tol":"13:30",
+                    "ig":"17:30"
+                },
+                "helyszin": "online",
+                "oktato": "Janics Tamás",
+                "szak": "alapképzés (BA/BSc/BProf)"
+                
+            }
+            
+            
+        ]
+    }
+}
