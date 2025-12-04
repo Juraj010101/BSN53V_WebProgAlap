@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Random szám generálása</h2>
+    <p id="BSN53V"></p>
+
+    <h3>0 és 10 közötti egész szám generálása</h3>
+    <button onclick="document.getElementById('BSN53V').innerHTML=
+    Math.floor(Math.random()*10);">Kerekített random szám generálása</button>
+
+    <button onclick="document.getElementById('BSN53V').innerHTML=
+    Math.floor(Math.random()*100)+100;">0 és 199 közötti egész szám generálása</button>
+
+    <button onclick="document.getElementById('BSN53V').innerHTML= random(30,80)">
+        Random szám generálása</button>
+
+    <script>
+        function random(min, max){
+            return Math.floor(Math.random() * (max - min + 1 ) ) + min;
+        }
+    </script>
+
+</body>
+</html>
